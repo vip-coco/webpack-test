@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkexternals_=self.webpackChunkexternals_||[]).push([[43],{411:(e,n,t)=>{function s(e,n){return e*n}function u(e,n){return e-n}t.r(n),t.d(n,{mul:()=>s,count:()=>u}),console.log("test.js文件被加载了~")}}]);
