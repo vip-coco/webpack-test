@@ -1,5 +1,5 @@
 {
-  "name": "my-workbox-webpack-plugin",
+  "name": "webpack-proxy",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -25,6 +25,7 @@
     "workbox-webpack-plugin": "^6.4.1"
   },
   "dependencies": {
+    "axios": "^0.24.0",
     "jQuery": "^1.7.4"
   }
 }

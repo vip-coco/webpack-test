@@ -28,8 +28,15 @@ module.exports = {
       directory: path.join(__dirname, "public"),
     },
     compress: true,
-    port: 1000,
+    port: 3001,
     open: true, 
+    proxy:{
+      '/api':{
+        target:'https://api.github.com',
+        pathRewrite: { '^/api': '' },
+        changeOrigin: true,
+      }
+    }
   }, 
   mode: 'development',
 };
