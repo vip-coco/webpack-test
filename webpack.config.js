@@ -1,6 +1,7 @@
 const path = require("path");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WorkboxWebpackPlugin = require('workbox-webpack-plugin');
+const BuildRunWebpackPlugin= require('build-run-webpack-plugin')
 
 module.exports = {
   entry: './src/js/index.js',
@@ -8,7 +9,9 @@ module.exports = {
     filename: 'js/built.js',
     path: path.resolve(__dirname, 'build')
   },
+  stats: 'errors-only',
   plugins: [
+    new BuildRunWebpackPlugin(),
     new WorkboxWebpackPlugin.GenerateSW({
       /*
         1. 帮助serviceworker快速启动
